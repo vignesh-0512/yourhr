@@ -5,10 +5,10 @@ class ResumeSubmission {
     private $conn;
     private $target_dir = "uploads/";
     private $allowed_file_types = ['pdf'];
-    private $max_file_size = 2 * 1024 * 1024; 
-
-    public function __construct($dbConnection) {
+    private $max_file_size = 2 * 1024 * 1024;    
+     public function __construct($dbConnection) {
         $this->conn = $dbConnection;
+
     }
 
     public function submit($data, $file) {
