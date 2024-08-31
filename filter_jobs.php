@@ -4,20 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Job Search</title>
-    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
         .form-group {
-            margin-bottom: 20px; /* Adjust spacing as needed */
+            margin-bottom: 20px; 
         }
         .btn-primary {
-            margin-top: 20px; /* Adjust spacing as needed */
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
     <div class="container mt-5">
-        <!-- Form -->
         <form action="" method="post">
             <div class="form-group">
                 <label for="qualification">Qualification:</label>
@@ -34,7 +32,7 @@
         
         <?php
         include 'db_connection.php';
-        $conn = (new Database())->getConnection(); // Get DB connection
+        $conn = (new Database())->getConnection(); 
 
         if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             $qualification = htmlspecialchars($_POST['qualification']);
